@@ -1,15 +1,19 @@
 language: rust
+
 rust:
   - stable
   - beta
   - nightly
+
 matrix:
   allow_failures:
     - rust: nightly
 
 after_success: |
-  cargo doc \
-  && echo '<meta http-equiv=refresh content=0;url=papago/index.html>' > target/doc/index.html && \
+  test $TRAVIS_BRANCH = "master" && \
+  test $TRAVIS_RUST_VERSION = "stable" && \
+  cargo doc && \
+  echo '<meta http-equiv=refresh content=0;url=papago/index.html>' > target/doc/index.html && \
   sudo pip install ghp-import && \
   ghp-import -n target/doc && \
   git push -qf https://${TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git gh-pages

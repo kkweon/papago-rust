@@ -1,4 +1,6 @@
 # Papago Rust Wrapper
+[![Build Status](https://travis-ci.com/kkweon/papago-rust.svg?branch=master)](https://travis-ci.com/kkweon/papago-rust)
+
 
 ## Library
 
@@ -14,6 +16,15 @@ assert_eq!(resp, "안녕 세계".to_owned());
 ```
 
 ## Bin File
+
+### Set up Environment Variables
+
+```bash
+export NAVER_CLIENT_ID="..."
+export NAVER_CLIENT_SECRET="..."
+```
+
+### Help
 ```
 Papago API
 
