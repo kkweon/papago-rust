@@ -1,11 +1,11 @@
 [package]
 name = "papago"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Kyung Mo Kweon <kkweon@gmail.com>"]
 edition = "2018"
 description = "Papago API Wrapper"
 license = "MIT"
-documentation = "https://github.com/kkweon/papago-rust"
+documentation = "https://kkweon.github.io/papago-rust/"
 homepage = "https://github.com/kkweon/papapgo-rust"
 repository = "https://github.com/kkweon/papago-rust"
 keywords = ["papago", "translation"]
