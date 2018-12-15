@@ -1,0 +1,12 @@
+[package]
+name = "papago"
+version = "0.1.0"
+authors = ["Kyung Mo Kweon <kkweon@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.5"                # higher level HTTP client library
+serde = "1.0.82"                          # A generic serialization/deserialization framework
+serde_urlencoded = "0.5.4"
+serde_derive = "1.0.82"                   # Macros 1.1 implementation of #[derive(Serialize, Deserialize)]
+clap = "2.32.0"
