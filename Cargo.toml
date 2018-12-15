@@ -3,6 +3,13 @@ name = "papago"
 version = "0.1.0"
 authors = ["Kyung Mo Kweon <kkweon@gmail.com>"]
 edition = "2018"
+description = "Papago API Wrapper"
+license = "MIT"
+license-file = "LICENSE"
+documentation = "https://github.com/kkweon/papago-rust"
+homepage = "https://github.com/kkweon/papapgo-rust"
+repository = "https://github.com/kkweon/papago-rust"
+keywords = ["papago", "translation"]
 
 [dependencies]
 reqwest = "0.9.5"                # higher level HTTP client library
